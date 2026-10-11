@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page_title }} | Shafiul Akhtar</title>
+    <meta name="description" content="Portfolio website for Shafiul Akhtar." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="{{ favicon_url }}" />
+    <link rel="shortcut icon" type="image/png" href="{{ favicon_url }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="{{ url_for('home') }}" class="brand" aria-label="Shafiul Akhtar home">
+          <img src="{{ logo_url }}" alt="Shafiul Akhtar logo" class="brand-mark" />
+          <span>Shafiul Akhtar</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="{{ url_for('home') }}">Home</a>
+          <a href="{{ url_for('about') }}">About</a>
+          <a href="{{ url_for('projects') }}">Projects</a>
+          <a href="{{ url_for('contact') }}">Contact</a>
+          <a href="{{ linkedin_url }}" target="_blank" rel="noreferrer">LinkedIn</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© 2026 Shafiul Akhtar</p>
+        <div class="footer-links">
+          <a href="{{ linkedin_url }}" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="{{ url_for('contact') }}">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

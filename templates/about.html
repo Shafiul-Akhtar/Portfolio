@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="page-hero section-spacing">
+  <div class="container narrow text-center">
+    <p class="eyebrow">About</p>
+    <h1>Technology professional with a hands-on mindset.</h1>
+  </div>
+</section>
+
+<section class="section-spacing">
+  <div class="container about-layout">
+    <div class="about-visual">
+      <div class="profile-card small-card">
+        <img src="{{ profile_image_url }}" alt="Shafiul Akhtar portrait" class="profile-image" />
+      </div>
+    </div>
+    <div class="about-copy">
+      <p>
+        I enjoy working at the intersection of engineering, process improvement, and user value. My focus is on building systems that are useful, scalable, and well designed.
+      </p>
+      <p>
+        From automation and scripting to application development and deployment workflows, I like creating practical tools that help teams move forward with clarity.
+      </p>
+      <ul class="bullet-list">
+        <li>Strong foundation in Python and automation</li>
+        <li>Comfortable across tooling, workflows, and collaboration</li>
+        <li>Interested in business-driven technology outcomes</li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}
