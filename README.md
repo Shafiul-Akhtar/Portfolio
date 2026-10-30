@@ -18,7 +18,7 @@ A multi-page portfolio website built with Python and Flask.
 
 ## Run locally
 
-1. Create and activate a virtual environment (optional but recommended)
+1. Create and activate a virtual environment (optional but recommended) 
 2. Install dependencies:
 
 ```bash
